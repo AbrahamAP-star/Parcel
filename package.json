@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
+  "homepage": "https://abrahamap-star.github.io/Parcel/",
+
   "scripts": {
     "start": "parcel serve --port 8080 src/index.html",
     "build": "parcel build src/index.html --public-url ./",
