@@ -1,0 +1,10 @@
+# Parcel cache
+.parcel-cache/
+
+# Carpeta de build
+dist/
+
+# Dependencias
+node_modules/
+packages/*/.parcel-cache/
+packages/*/dist/
