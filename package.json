@@ -1,22 +1,17 @@
 {
-  "name": "parcel",
+  "name": "parcel-project",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
   "homepage": "https://abrahamap-star.github.io/Parcel/",
-
   "scripts": {
-    "start": "parcel serve --port 8080 src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
-    "deploy": "gh-pages -d dist"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./ --dist-dir docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs"
   },
-  "keywords": [],
-  "author": "Abraham",
-  "license": "MIT",
-  "type": "commonjs",
   "devDependencies": {
-    "gh-pages": "^6.3.0",
-    "parcel": "^2.16.4",
+    "gh-pages": "^6.1.1",
+    "parcel": "latest",
     "posthtml-include": "^2.0.1"
   }
 }
